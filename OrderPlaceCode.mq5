@@ -30,6 +30,8 @@ void OnStart()
    MqlTradeRequest request = {};
    MqlTradeResult  result  = {};
    
+   // this is just a test
+   
    // Filling request parameters
    request.action    = TRADE_ACTION_DEAL;                     
    request.symbol    = _Symbol;                              
