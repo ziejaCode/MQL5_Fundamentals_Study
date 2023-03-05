@@ -6,9 +6,13 @@
 #property copyright "Copyright 2022, MetaQuotes Ltd."
 #property link      "https://www.mql5.com"
 #property version   "1.00"
+#property 
 /* This script is purely for practice purpose
 
    It will present an example of opening and closing order on the market
+   
+   this is only test
+
 
 */
 
