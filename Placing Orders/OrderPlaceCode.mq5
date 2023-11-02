@@ -22,6 +22,11 @@ void OnStart()
    double bidPrice = SymbolInfoDouble(_Symbol, SYMBOL_BID);
    double tickSize = SymbolInfoDouble(_Symbol,SYMBOL_TRADE_TICK_SIZE);
    
+   // this is just for checking -- To delete
+   Print("Check: "+askPrice+", "+_Symbol+", "+SYMBOL_ASK);
+   Print("Check: "+askPrice+", "+_Symbol+", "+SYMBOL_ASK);
+   Print("Check: "+askPrice+", "+_Symbol+", "+SYMBOL_ASK);
+   
    askPrice = round(askPrice/tickSize) * tickSize;
    bidPrice = round(bidPrice/tickSize) * tickSize;
    
