@@ -29,6 +29,7 @@ void OnStart()
    double bidPrice = SymbolInfoDouble(_Symbol, SYMBOL_BID);
    double tickSize = SymbolInfoDouble(_Symbol,SYMBOL_TRADE_TICK_SIZE);
    
+   
    askPrice = round(askPrice/tickSize) * tickSize;
    bidPrice = round(bidPrice/tickSize) * tickSize;
    

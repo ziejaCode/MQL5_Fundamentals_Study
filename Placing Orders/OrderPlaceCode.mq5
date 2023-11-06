@@ -24,8 +24,8 @@ void OnStart()
    
    // this is just for checking -- To delete
    Print("Check: "+askPrice+", "+_Symbol+", "+SYMBOL_ASK);
-   Print("Check: "+askPrice+", "+_Symbol+", "+SYMBOL_ASK);
-   Print("Check: "+askPrice+", "+_Symbol+", "+SYMBOL_ASK);
+   Print("Check: "+bidPrice+", "+_Symbol+", "+SYMBOL_BID);
+   Print("Check: "+tickSize+", "+_Symbol+", "+SYMBOL_TRADE_TICK_SIZE);
    
    askPrice = round(askPrice/tickSize) * tickSize;
    bidPrice = round(bidPrice/tickSize) * tickSize;
