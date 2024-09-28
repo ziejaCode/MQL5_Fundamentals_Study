@@ -9,6 +9,7 @@
 
 
 input int InpSettingFile = "ziejacode/Templates/DonchianInputs.ini";
+//"Desktop/Code""
 
 //+------------------------------------------------------------------+
 //| Script program start function                                    |

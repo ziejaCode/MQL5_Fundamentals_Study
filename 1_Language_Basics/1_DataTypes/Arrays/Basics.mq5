@@ -14,7 +14,20 @@ int size = ArraySize(numbers);
 
 void OnStart()
   {
-//---
-   Alert(size);
-  }
-//+------------------------------------------------------------------+
+  
+  
+   MqlRates bar[];  // this is creating an array objec
+   Print("Size of array before is ",ArraySize(bar));
+   ArraySetAsSeries(bar,true); // it sets the array
+   CopyRates(_Symbol,PERIOD_CURRENT,0,3,bar); // this copy an information about bars 0,1,2 into bar[] array.
+   Print("Size of array after is ",ArraySize(bar));
+  
+   for(int i = 0; i<ArraySize(bar); i++){
+     
+     MqlRates rates = bar[i];
+     Print("Bar ", i ," data: ,", rates.open, " , ", rates.close, " , " ,rates.spread);
+     
+     //Print("Bar ", i ," data: ,", rates.open, " , ",rates.close, " , ",rates.open, " , ", TimeToString(rates.datatime), " , ");
+     }
+  
+ }
