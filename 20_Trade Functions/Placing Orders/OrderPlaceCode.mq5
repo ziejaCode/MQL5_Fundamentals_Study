@@ -47,7 +47,9 @@ void OnStart()
    request.type_filling = ORDER_FILLING_IOC;
    request.deviation = 10; 
    request.magic = MagicNumber;                                                              
-   request.comment   = comment;   
+   request.comment   = comment;
+   request.sl = askPrice + 500 * tickSize;
+   request.tp =   
    
    if(!OrderSend(request, result))
    {
